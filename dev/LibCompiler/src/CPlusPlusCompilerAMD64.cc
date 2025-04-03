@@ -15,7 +15,7 @@
 #define kExitNO (EXIT_FAILURE)
 
 #define kSplashCxx() \
-	kPrintF(kWhite "%s\n", "NeOS C++ Compiler Driver, (c) 2024 Amlal El Mahrouss, all rights reserved.")
+	kPrintF(kWhite "%s\n", "NeKernel C++ Compiler Driver, (c) 2024 Amlal El Mahrouss, all rights reserved.")
 
 // extern_segment, @autodelete { ... }, fn foo() -> auto { ... }
 
@@ -212,7 +212,7 @@ static std::size_t kFunctionEmbedLevel = 0UL;
 
 const char* CompilerFrontendCPlusPlus::Language()
 {
-	return "NeOS C++";
+	return "NeKernel C++";
 }
 
 static std::uintptr_t kOrigin = 0x1000000;

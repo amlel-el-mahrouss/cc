@@ -20,7 +20,7 @@ tools/dbg
 
 Examples/
 
-# NeOS/MP-UX executable
+# NeKernel/MP-UX executable
 *.exec
 *.bin
 

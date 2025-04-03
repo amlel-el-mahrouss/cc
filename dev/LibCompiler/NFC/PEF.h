@@ -14,7 +14,7 @@
 #define kPefMagic	 "Joy!"
 #define kPefMagicFat "yoJ!"
 
-#define kPefExt		  ".o"
+#define kPefExt		  ".exec"
 #define kPefDylibExt  ".dylib"
 #define kPefLibExt	  ".lib"
 #define kPefObjectExt ".obj"

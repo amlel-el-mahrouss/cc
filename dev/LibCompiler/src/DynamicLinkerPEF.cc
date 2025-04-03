@@ -8,14 +8,13 @@
 ------------------------------------------- */
 
 /// @author EL Mahrouss Amlal (amlel)
-/// @brief NeOS 64-bit PEF Linker.
+/// @brief NeKernel 64-bit PEF Linker.
 /// Last Rev: Sat Feb 24 CET 2024
 /// @note Do not look up for anything with .code64/.data64/.zero64!
 /// It will be loaded when the program loader will start the image.
 
 //! Toolchain Kit.
 #include <LibCompiler/Defines.h>
-
 #include <LibCompiler/NFC/ErrorID.h>
 
 //! Assembler Kit
@@ -32,7 +31,7 @@
 #include <LibCompiler/NFC/AE.h>
 #include <cstdint>
 
-#define kLinkerVersionStr "NeOS 64-Bit Linker (Preferred Executable) %s, (c) Amlal El Mahrouss 2024, all rights reserved.\n"
+#define kLinkerVersionStr "NeKernel 64-Bit Linker (Preferred Executable) %s, (c) Amlal El Mahrouss 2024-2025, all rights reserved.\n"
 
 #define MemoryCopy(DST, SRC, SZ) memcpy(DST, SRC, SZ)
 #define StringCompare(DST, SRC)	 strcmp(DST, SRC)
@@ -66,7 +65,7 @@ namespace Detail
 enum
 {
 	kABITypeStart	= 0x1010, /* Invalid ABI start of ABI list. */
-	kABITypeNE		= 0x5046, /* PF (NeOS's PEF ABI) */
+	kABITypeNE		= 0x5046, /* PF (NeKernel's PEF ABI) */
 	kABITypeInvalid = 0xFFFF,
 };
 
